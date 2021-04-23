@@ -1,6 +1,6 @@
 # Run
 
-- Set hyperparameters(learning rate, hidden_size, batch_size, iterations)
+- set hyperparameters(learning rate, hidden_size, batch_size, iterations)
 - set the path of the method and corresponding loading method
 - run main.py
 
