@@ -1,6 +1,8 @@
 # Run
 
-- set hyperparameters(learning rate, hidden_size, batch_size, iterations)
+- set hyperparameters(learning rate, iterations)
+  - for digital data, we suggest learning rate = 1e-6
+  - for string data, we suggest learning rate between 1e-5 and 1e-4 
 - set the path of the method and corresponding loading method
 - run main.py
 
