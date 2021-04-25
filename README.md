@@ -1,4 +1,4 @@
-# Run
+# How to run the program
 
 - set hyperparameters(learning rate, iterations)
   - for digital data, we suggest learning rate = 1e-6
