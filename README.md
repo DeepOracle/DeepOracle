@@ -6,15 +6,45 @@
 - set the path of the method and corresponding loading method
 - run main.py
 
-# Python file
+# How to generate dataset
+
+- step 1: Generate the legal input of MUT randomly
+
+- step 2: Perform the method call procedure
+
+- step 3: Capture the output
+
+- step 4: Repeat step 1
+
+- Example:
+
+  ````java
+  for (int i=0;i<train_iter+test_iter;i++){
+      String token = "";
+      int num = random.nextInt(10)+1;
+      for(int j=0;j<num;j++){
+          char ch;
+          if(random.nextInt(2)==0){
+              ch = (char)('a'+random.nextInt(26));
+          }else{
+              ch = (char)('A'+random.nextInt(26));
+          }
+          token+=ch;
+      }
+      final Lexer lexer = getLexer(token, formatWithEscaping);
+      Token result = lexer.nextToken(new Token());
+      String input = token;
+      String output = result.toString();
+  	# save the input and output    
+  }
+  ````
+
+# Python
 
 - main.py: the main file of our approach
-- cal_RP.py: calculate the recall and precision of these methods
-- cal_ROC.py: calculate ROC and AUC of these methods
-- IST.py: the main file of the baseline
 - count_label.py: calculate the number of top k in the file
 - Coverage.py: sort the test dataset according to line.txt
-- draw_pic.py: draw the picture
+- daikon.py: sort the test dataset according to the output of **Daikon**
 - loadData.py: load data
 
 # Dataset
@@ -30,6 +60,7 @@
 - daikon_input: the input of the test dataset generated after daikon inspection(100000,)
 - daikon_output.txt: the output of the test dataset generated after daikon inspection(100000,)
 - daikon_label.txt: the label of the test dataset generated after daikon inspection(100000,)
+- **Some method lack of daikon.txt because they failed to execute Daikon(M14,M22)**
 
 # Line coverage
 
@@ -38,10 +69,7 @@
 - coverage_input.txt: the input of the test dataset generated after checking the line coverage(100000,)
 - coverage_output.txt: the output of the test dataset generated after checking the line coverage(100000,)
 - coverage_label.txt: the label of the test dataset generated after checking the line coverage(100000,)
-- **Some method lack of line.txt because the method has no branch and the line coverage of any test case is the same(M1-M11,M14)**
+- **Some method lack of line.txt because the method has no branch and the line coverage of any test case is the same(M1-10,M12,M14-15,M17)**
 
-# Output file of the network
+- 
 
-- 1.txt: the output vector of our approach(100000,)
-- 2.txt：the output vector of baseline, the size of training dataset is 1000(100000,)
-- 3.txt：the output vector of baseline, the size of training dataset is equal to our approach(100000,)
