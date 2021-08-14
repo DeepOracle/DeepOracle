@@ -19,6 +19,8 @@
 - Example:
 
   ````java
+  int train_iter = 1000000;
+  int test_iter = 100000;
   for (int i=0;i<train_iter+test_iter;i++){
       String token = "";
       int num = random.nextInt(10)+1;
