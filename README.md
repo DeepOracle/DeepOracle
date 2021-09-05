@@ -73,5 +73,3 @@
 - coverage_label.txt: the label of the test dataset generated after checking the line coverage(100000,)
 - **Some method lack of line.txt because the method has no branch and the line coverage of any test case is the same(M1-10,M12,M14-15,M17)**
 
-- 
-
