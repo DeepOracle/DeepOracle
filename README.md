@@ -39,7 +39,7 @@ This is the replication package of the paper "Generating and Exploiting Approxim
 - Select the method under test  
 - Invoke the ***generateData*** method
 
-![image](https://github.com/DeepOracle/DeepOracle/raw/master/DeepOracle.gif)
+![image](https://github.com/DeepOracle/DeepOracle/blob/main/DeepOracle.gif)
 
 ## Environmental requirements
 - jdk1.8/jdk11
