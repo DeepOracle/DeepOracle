@@ -20,6 +20,7 @@ This is the replication package of the paper "Generating and Exploiting Approxim
 - Data/Daikon: The experimental results of daikon-based selection
 - TM: real world defects method employed by the evaluation
 - MM: mutated method employed by ghe evaluation
+- DeepOracle.zip: plugin project of DeepOracle
 
 # SourceCode Description (/Code)
 
