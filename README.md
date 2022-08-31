@@ -59,30 +59,41 @@ This is the replication package of the paper "Generating and Exploiting Approxim
     - before_data.txt: the input of test cases
     - after_data.txt: the output of test cases
     - label.txt: the label of test cases (only for testing)
-<img src='./Fig/Data.jpg' align=center/>
+<img src='./Fig/Data.jpg' align=center />
+
 - Select the corresponding data processing function: ``` loadData.load_isInner_before(before_file)```
-<img src='./Fig/LoadData.png' align=center/>
+<img src='./Fig/LoadData.png' align=center />
+
 - Run ```python main.py```
 
 ## Random-based selection
 - Load the corresponding data as dataset.(input,output,label)
-<img src='./Fig/RandomTest.jpg' align=center/>
+<img src='./Fig/RandomTest.jpg' align=center />
+
 - execute ```random.shuffle(dataset)```
-<img src='./Fig/Random.jpg' align=center/>
+<img src='./Fig/Random.jpg' align=center />
+
 - Run ```python count_label.py```
+
 ## Coverage-based selection
 - Get the line coverage information corresponding to the test case (line_coverage.txt)
-<img src='./Fig/Line.jpg' align=center/>
+<img src='./Fig/Line.jpg' align=center />
+
 - Select the corresponding test case and line coverage file path (```load_file(compare_path)```)
-<img src='./Fig/Coverage.jpg' align=center/>
-- Run ``` python Coverage.py```
+<img src='./Fig/Coverage.jpg' align=center />
+
+- Run ```python Coverage.py```
+
 ## Daikon-based selection
 - Run Daikon on MUT and get Daikon output information
-<img src='./Fig/DaikonInfo.jpg' align=center/>
+<img src='./Fig/DaikonInfo.jpg' align=center />
+
 - Generate the sorting algorithm base on the output of daikon
-<img src='./Fig/Algorithm.png' align=center/>
+<img src='./Fig/Algorithm.png' align=center />
+
 - Select the corresponding sorting algorithm of MUT: ```main(method_path, 71)```
-<img src='./Fig/Daikon.jpg' align=center/>
+<img src='./Fig/Daikon.jpg' align=center />
+
 - Run ```python daikon.py```
 
 
