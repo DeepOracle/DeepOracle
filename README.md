@@ -62,14 +62,14 @@ This is the replication package of the paper "Generating and Exploiting Approxim
 <img src='./Fig/Data.jpg' align=center/>
 - Select the corresponding data processing function: ``` loadData.load_isInner_before(before_file)```
 <img src='./Fig/LoadData.png' align=center/>
-- Run ``` python main.py```
+- Run ```python main.py```
 
 ## Random-based selection
 - Load the corresponding data as dataset.(input,output,label)
 <img src='./Fig/RandomTest.jpg' align=center/>
 - execute ```random.shuffle(dataset)```
 <img src='./Fig/Random.jpg' align=center/>
-- Run `python count_label.py`
+- Run ```python count_label.py```
 ## Coverage-based selection
 - Get the line coverage information corresponding to the test case (line_coverage.txt)
 <img src='./Fig/Line.jpg' align=center/>
